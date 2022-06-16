@@ -45,7 +45,7 @@ spring:
       enabled: true
       discovery:
         discovery-server-url: http://spring-cloud-kubernetes-discoveryserver
-        enabled: false
+        enabled: true
 eureka:
   client:
     enabled: false
