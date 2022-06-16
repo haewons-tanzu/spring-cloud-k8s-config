@@ -19,13 +19,18 @@ chaos:
     assaults:
       level: 3
       latency-active: true
+
 spring:
+  config:
+    active:
+      on-profile: default
   cloud:
     kubernetes:
       enabled: false
 
 eureka:
   client:
+    enabled: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
@@ -33,11 +38,14 @@ eureka:
 spring:
   config:
     activate:
+      on-profile: kubernetes
       on-cloud-platform: kubernetes
   cloud:
     kubernetes:
       enabled: true
-
+      discovery:
+        discovery-server-url: http://spring-cloud-kubernetes-discoveryserver
+        enabled: false
 eureka:
   client:
     enabled: false
