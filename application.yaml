@@ -10,15 +10,15 @@ management:
     web:
       exposure:
         include: '*'
-chaos:
-  monkey:
-    enabled: false
-    watcher:
-      restController: true
-      service: false
-    assaults:
-      level: 3
-      latency-active: true
+#chaos:
+#  monkey:
+#    enabled: false
+#    watcher:
+#      restController: true
+#      service: false
+#    assaults:
+#      level: 3
+#      latency-active: true
 spring:
   cloud:
     kubernetes:
