@@ -1,5 +1,3 @@
-hello.name: Haewon Shin
-
 management:
   endpoint:
     chaosmonkey:
