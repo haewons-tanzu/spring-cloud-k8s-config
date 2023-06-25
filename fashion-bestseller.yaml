@@ -1,0 +1,16 @@
+eureka:
+  client:
+    # this disables the Eureka Spring Cloud discovery client
+    enabled: false
+spring:
+  cloud:
+    discovery:
+      client:
+        simple:
+          instances:
+            fashion-bestseller:
+            - uri: https://fashion-bestseller.dev-team-01.svc.cluster.local
+            toys-bestseller:
+            - uri: https://toys-bestseller.dev-team-01.svc.cluster.local
+            hot-deals:
+            - uri: https://hotdeals.dev-team-01.svc.cluster.local 
