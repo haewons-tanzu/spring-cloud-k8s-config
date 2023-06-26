@@ -11,8 +11,8 @@ spring:
         simple:
           instances:
             fashion-bestseller:
-            - uri: https://fashion-bestseller.dev-team-01.svc.cluster.local
+            - uri: http://fashion-bestseller.dev-team-01.svc.cluster.local
             toys-bestseller:
-            - uri: https://toys-bestseller.dev-team-01.svc.cluster.local
+            - uri: http://toys-bestseller.dev-team-01.svc.cluster.local
             hot-deals:
-            - uri: https://hotdeals.dev-team-01.svc.cluster.local 
+            - uri: http://hotdeals.dev-team-01.svc.cluster.local 
