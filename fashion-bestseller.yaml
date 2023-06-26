@@ -1,3 +1,5 @@
+hello.name: Haewon Shin1
+
 eureka:
   client:
     # this disables the Eureka Spring Cloud discovery client
